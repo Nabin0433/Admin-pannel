@@ -38,8 +38,8 @@ const Users = () => {
   }, [currentPage, page])
 
   return (
-    <CRow>
-      <CCol xl={6}>
+    <CRow >
+      <CCol xl={12}>
         <CCard>
           <CCardHeader>
             Users
@@ -50,11 +50,11 @@ const Users = () => {
             items={usersData}
             fields={[
               { key: 'name', _classes: 'font-weight-bold' },
-              'registered', 'role', 'status'
+              'Phone','registered', 'status'
             ]}
             hover
             striped
-            itemsPerPage={5}
+            itemsPerPage={10}
             activePage={page}
             clickableRows
             onRowClick={(item) => history.push(`/users/${item.id}`)}
@@ -72,7 +72,7 @@ const Users = () => {
           <CPagination
             activePage={page}
             onActivePageChange={pageChange}
-            pages={5}
+            pages={2}
             doubleArrows={false} 
             align="center"
           />

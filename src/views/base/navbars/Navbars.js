@@ -62,9 +62,6 @@ const CNavbars = () => {
                   </CDropdownToggle>
                   <CDropdownMenu>
                     <CDropdownItem>EN</CDropdownItem>
-                    <CDropdownItem>ES</CDropdownItem>
-                    <CDropdownItem>RU</CDropdownItem>
-                    <CDropdownItem>FA</CDropdownItem>
                   </CDropdownMenu>
                 </CDropdown>
                 <CDropdown

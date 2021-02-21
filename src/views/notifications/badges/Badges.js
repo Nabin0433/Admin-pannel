@@ -15,6 +15,9 @@ const Badges = () => {
   return (
     <CRow>
       <CCol xs="12" md="6">
+          <CButton color="secondary">
+              Notifications <CBadge color="primary" shape="pill" style={{ position: 'static' }}>9</CBadge>
+            </CButton>
         <CCard>
           <CCardHeader>
             Badges
@@ -22,16 +25,9 @@ const Badges = () => {
           </CCardHeader>
           <CCardBody>
             <h1>Example heading <CBadge color="secondary">New</CBadge></h1>
-            <h2>Example heading <CBadge color="secondary">New</CBadge></h2>
-            <h3>Example heading <CBadge color="secondary">New</CBadge></h3>
-            <h4>Example heading <CBadge color="secondary">New</CBadge></h4>
-            <h5>Example heading <CBadge color="secondary">New</CBadge></h5>
-            <h6>Example heading <CBadge color="secondary">New</CBadge></h6>
           </CCardBody>
           <CCardFooter>
-            <CButton color="secondary">
-              Notifications <CBadge color="primary" shape="pill" style={{ position: 'static' }}>9</CBadge>
-            </CButton>
+          
           </CCardFooter>
         </CCard>
       </CCol>

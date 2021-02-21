@@ -50,10 +50,10 @@ const TheHeaderDropdownNotif = () => {
         </CDropdownItem>
         <CDropdownItem className="d-block">
           <div className="text-uppercase mb-1">
-            <small><b>Memory Usage</b></small>
+            <small><b>New Users</b></small>
           </div>
-          <CProgress size="xs" color="warning" value={70} />
-          <small className="text-muted">11444GB/16384MB</small>
+          <CProgress size="xs" color="warning" value={30} />
+          <small className="text-muted">999+</small>
         </CDropdownItem>
         <CDropdownItem className="d-block">
           <div className="text-uppercase mb-1">

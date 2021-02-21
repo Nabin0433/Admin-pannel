@@ -24,5 +24,4 @@ const DocsLink = props => {
     </div>
   )
 }
-
 export default React.memo(DocsLink)

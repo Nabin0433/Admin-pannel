@@ -33,7 +33,7 @@ const TheHeaderDropdownMssg = () => {
             <div className="pt-3 mr-3 float-left">
               <div className="c-avatar">
                 <CImg
-                  src={'avatars/7.jpg'}
+                  src={'https://www.ultimodeal.com.np/resources/assets/images/site_images/1606788296.icon.png'}
                   className="c-avatar-img"
                   alt="admin@bootstrapmaster.com"
                 />

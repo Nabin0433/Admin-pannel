@@ -50,7 +50,7 @@ const TheHeader = () => {
         onClick={toggleSidebar}
       />
       <CHeaderBrand className="mx-auto d-lg-none" to="/">
-        <CIcon name="logo" height="48" alt="Logo"/>
+        <img style={{width: '120px',color:'red',background:'black', height:'20px', zIndex:'111'}} alt='logo' name='logo' src="https://www.ultimodeal.com.np/resources/assets/images/site_images/1606788513.website_logo_white.png" />
       </CHeaderBrand>
 
       <CHeaderNav className="d-md-down-none mr-auto">
@@ -88,7 +88,7 @@ const TheHeader = () => {
             >
               <CIcon name="cil-graph" alt="Dashboard" />&nbsp;Dashboard
             </CLink>
-            <CLink className="c-subheader-nav-link" href="#">
+            <CLink className="c-subheader-nav-link" to="#">
               <CIcon name="cil-settings" alt="Settings" />&nbsp;Settings
             </CLink>
           </div>
