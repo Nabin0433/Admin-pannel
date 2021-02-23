@@ -1,4 +1,5 @@
 import React from 'react';
+import sdfklsdfk
 
 
 const Categories = React.lazy(() => import('./views/categories/Categories'));
