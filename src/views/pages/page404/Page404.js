@@ -11,12 +11,14 @@ import {
   CRow
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
+import Error404 from './Error404'
 
 const Page404 = () => {
   return (
     <div className="c-app c-default-layout flex-row align-items-center">
-      <CContainer>
-        <CRow className="justify-content-center">
+      <Error404 style={{position:"fixed",width:'100vw',height:'100vh',zIndex:'-1'}} />
+      <CContainer style={{position:"fixed",width:'100vw',height:'100vh',zIndex:'11',top:'70%'}}>
+        <CRow  className="justify-content-center">
           <CCol md="6">
             <div className="clearfix">
               <h1 className="float-left display-3 mr-4">404</h1>
@@ -41,4 +43,4 @@ const Page404 = () => {
   )
 }
 
-export default Page404
+export default Page404;

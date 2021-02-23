@@ -19,12 +19,12 @@ function Error404() {
     loop: true,
     easing: "easeInOutSine",
     direction: "alternate",
-    scale: [{ value: 0.6 }, { value: 1.5 }, { value: 0.6, delay: 20 }],
-    rotateY: { value: "+=160", delay: 180 },
+    scale: [{ value: 0.6 }, { value: 1.5 }, { value: 0.6, delay: 200 }],
+    rotateY: { value: "+=180", delay: 180 },
   });
 
   return (
-    <div className="error404">
+    <div className="error404">  
       <a href="/">
         <div class="container">
           <div class="row">

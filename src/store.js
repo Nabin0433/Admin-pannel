@@ -1,17 +1,20 @@
-import { createStore } from 'redux'
+import { createStore } from 'redux';
 
 const initialState = {
-  sidebarShow: 'responsive'
+  sidebarShow: 'responsive',
+  user: null
 }
 
 const changeState = (state = initialState, { type, ...rest }) => {
   switch (type) {
     case 'set':
       return {...state, ...rest }
+      case 'login' :
+        return { ...state, ...rest }
     default:
       return state
   }
 }
 
 const store = createStore(changeState)
-export default store
+export default store ;

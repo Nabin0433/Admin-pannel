@@ -7,9 +7,15 @@ import {
   CDropdownToggle,
   CImg
 } from '@coreui/react'
-import CIcon from '@coreui/icons-react'
+import CIcon from '@coreui/icons-react';
+import CreateIcon from '@material-ui/icons/Create';
+import { useHistory } from 'react-router-dom';
+
+
 
 const TheHeaderDropdown = () => {
+
+  const history = useHistory();
   return (
     <CDropdown
       inNav
@@ -21,7 +27,7 @@ const TheHeaderDropdown = () => {
           <CImg
             src={'https://th.bing.com/th/id/OIF.WREm3pqUiJRS6HMGOgQRBA?pid=ImgDet&rs=1'}
             className="c-avatar-img"
-            alt="admin@bootstrapmaster.com"
+            alt="Avarar Icon"
           />
         </div>
       </CDropdownToggle>
@@ -34,25 +40,10 @@ const TheHeaderDropdown = () => {
         >
           <strong>Account</strong>
         </CDropdownItem>
-        <CDropdownItem>
-          <CIcon name="cil-bell" className="mfe-2" />
-          Updates
-          <CBadge color="info" className="mfs-auto">42</CBadge>
-        </CDropdownItem>
-        <CDropdownItem>
-          <CIcon name="cil-envelope-open" className="mfe-2" />
-          Messages
-          <CBadge color="success" className="mfs-auto">42</CBadge>
-        </CDropdownItem>
-        <CDropdownItem>
-          <CIcon name="cil-task" className="mfe-2" />
-          Tasks
-          <CBadge color="danger" className="mfs-auto">42</CBadge>
-        </CDropdownItem>
-        <CDropdownItem>
-          <CIcon name="cil-comment-square" className="mfe-2" />
-          Comments
-          <CBadge color="warning" className="mfs-auto">42</CBadge>
+        <CDropdownItem onClick={() => history.push('/register')}>
+         <CreateIcon style={{marginRight:"7px"}} />
+          Register
+          <CBadge color="info" className="mfs-auto">New</CBadge>
         </CDropdownItem>
         <CDropdownItem
           header
@@ -60,7 +51,7 @@ const TheHeaderDropdown = () => {
           color="light"
           className="text-center"
         >
-          <strong>Settings</strong>
+        <strong>Settings</strong>
         </CDropdownItem>
         <CDropdownItem>
           <CIcon name="cil-user" className="mfe-2" />Profile
@@ -77,7 +68,7 @@ const TheHeaderDropdown = () => {
         <CDropdownItem divider />
         <CDropdownItem>
           <CIcon name="cil-lock-locked" className="mfe-2" />
-          LogOut Admin
+          Logout Admin
         </CDropdownItem>
       </CDropdownMenu>
     </CDropdown>
